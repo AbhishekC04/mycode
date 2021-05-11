@@ -1,0 +1,9 @@
+animals:
+  - name: fox
+  - type: mammal
+  - name: fly
+  - type: insect
+  - name: cod
+  - type: fish
+# animals=[{'name': 'fox', 'type': 'mammal'},{'name': 'fly', 'type': 'insect'},{'name': 'cod', 'type': 'fish'}]  
+
