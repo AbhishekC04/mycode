@@ -1,16 +1,24 @@
 from random import randint
 
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+p1 = Person("John", 36)
+print(p1.name)
+print(p1.age)
+
 class Player:
-  def __init__(self):
-    self.dice = []
+  def __init__(myself):
+    myself.dice = []
 
-  def roll(self):
-    self.dice = [] # clears current dice
+  def roll(myself):
+    myself.dice = [] # clears current dice
     for i in range(3):
-      self.dice.append(randint(1,6))
+      myself.dice.append(randint(1,6))
 
-  def get_dice(self):
-    return self.dice
+  def get_dice(myself):
+    return myself.dice
 
 player1 = Player()
 player2 = Player()
@@ -27,4 +35,7 @@ elif sum(player1.get_dice()) > sum(player2.get_dice()):
   print("Player 1 wins!")
 else:
   print("Player 2 wins!")
+
+del player1
+del player2
 
